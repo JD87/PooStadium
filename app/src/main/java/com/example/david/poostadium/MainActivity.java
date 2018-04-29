@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
                         fade_animation(imv_slash,250);
                         ouch_animation(imv_p2,100,20);
                         character1.attack(character2);
+                        if(character2.life <= 0){
+                            character2.setLife(0);
+                            imv_p2.animate().rotationY(1080).setDuration(2000);
+                        }
                         txv_lifep2.setText(character2.getLife() + "");
                     }
                     else {
@@ -70,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                         fade_animation(imv_slash,250);
                         ouch_animation(imv_p1,100,-20);
                         character2.attack(character1);
+                        if(character1.life <= 0){
+                            character1.setLife(0);
+                            imv_p1.animate().rotationY(1080).setDuration(2000);
+                        }
                         txv_lifep1.setText(character1.getLife() + "");
                     }
                 if (dy>150){
