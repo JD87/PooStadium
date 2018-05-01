@@ -5,10 +5,11 @@
     <item
         android:drawable="@color/colorPrimary"/>
 
-    <item android:gravity="bottom">
+    <item android:top="500dp"
+        android:bottom="50dp"
+        android:left="275dp">
         <bitmap
-            android:gravity="right|center_vertical"
-            android:src="@mipmap/siha" />
+            android:src="@mipmap/siha"/>
     </item>
 
 </layer-list>

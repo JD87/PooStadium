@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PooStadium</string>
+
+    <string-array name="charclass">
+        <item>Knight</item>
+        <item>Beast</item>
+        <item>Mage</item>
+        <item>Archer</item>
+    </string-array>
+
 </resources>
