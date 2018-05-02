@@ -10,39 +10,27 @@
         android:id="@+id/imv_foot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/skb_playrs"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/monty_python_foot" />
 
-    <Button
-        android:id="@+id/btn_lets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:text="Let's mess'em up!"
-        android:textAllCaps="false"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/imv_foot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <SeekBar
         android:id="@+id/skb_playrs"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="253dp"
-        android:layout_height="39dp"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginRight="62dp"
-        android:layout_marginStart="62dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="13dp"
         android:max="2"
         android:progress="0"
         android:thumb="@mipmap/holyhandgranade"
-        app:layout_constraintBottom_toTopOf="@+id/spr_classes"
+        app:layout_constraintBottom_toTopOf="@+id/txv_pvc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imv_foot" />
@@ -51,10 +39,52 @@
         android:id="@+id/spr_classes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="127dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_letsplay"
+        android:layout_width="181dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Let's mess'em UP!"
+        android:textColor="?android:attr/colorForeground"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_foot"
+        app:layout_constraintEnd_toEndOf="@+id/imv_foot" />
+
+    <TextView
+        android:id="@+id/txv_pvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="PVP"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skb_playrs" />
+
+    <TextView
+        android:id="@+id/txv_pvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="PVC"
+        app:layout_constraintStart_toStartOf="@+id/skb_playrs"
+        app:layout_constraintTop_toBottomOf="@+id/imv_foot" />
+
+    <TextView
+        android:id="@+id/txv_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="WiFi"
+        app:layout_constraintEnd_toEndOf="@+id/skb_playrs"
         app:layout_constraintTop_toBottomOf="@+id/skb_playrs" />
 
 </android.support.constraint.ConstraintLayout>

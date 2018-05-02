@@ -24,6 +24,9 @@
         <activity
             android:name=".MainActivity"
             android:label="the MAIN activity... so far" />
+        <activity
+            android:name=".WifiActivity"
+            android:label="the Wifi activity... so far" />
     </application>
 
 </manifest>

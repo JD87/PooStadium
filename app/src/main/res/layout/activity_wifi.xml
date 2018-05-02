@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txv_namep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Hello World!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_namep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imv_p1"
+        android:layout_width="106dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@+id/txv_lifep1"
+        app:layout_constraintTop_toTopOf="@+id/txv_lifep1"
+        app:srcCompat="@mipmap/caerbannog_dynamite" />
+
+    <ImageView
+        android:id="@+id/imv_p2"
+        android:layout_width="106dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/txv_lifep2"
+        app:layout_constraintTop_toTopOf="@+id/txv_lifep2"
+        app:srcCompat="@mipmap/blk_knight" />
+
+    <ImageView
+        android:id="@+id/imv_slash"
+        android:layout_width="170dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="43dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txv_namep1"
+        app:srcCompat="@mipmap/slashing" />
+
+    <TextView
+        android:id="@+id/txv_lifep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txv_namep2"
+        app:layout_constraintTop_toBottomOf="@+id/txv_namep2" />
+
+    <TextView
+        android:id="@+id/txv_lifep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txv_namep1"
+        app:layout_constraintTop_toBottomOf="@+id/txv_namep1" />
+
+    <FrameLayout
+        android:id="@+id/frm_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
