@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:ems="10"
+            android:hint="IP address"
             android:inputType="textPersonName"
-            android:text="IP address"
             app:layout_constraintBottom_toTopOf="@+id/etx_socket"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -30,8 +30,8 @@
             android:layout_width="129dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Socket (6789)"
             android:inputType="textPersonName"
-            android:text="Socket"
             app:layout_constraintBottom_toTopOf="@+id/btn_connect"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +47,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/etx_socket"
             app:layout_constraintTop_toBottomOf="@+id/etx_socket" />
+
+        <TextView
+            android:id="@+id/txv_frag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/etx_ipadd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 
